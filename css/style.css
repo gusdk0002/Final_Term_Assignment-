@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+body { 
+	padding:0;
+	margin:0;}
+
+.frame {
+	width:100%;
+	height:100%;
+	background-color:black;
+	position:absolute}
+
+.top {
+	width:100%;
+	height:5%;
+	background-color:white;
+	position:absolute;
+	top:0;}
+
+	.date1, .web, .date2 {
+		margin:0;
+		border:0;
+		padding:0;
+		color:#1E5EC0;
+		font-family:'DM Serif Display', serif;
+		font-size: 3vh;
+		position:absolute;
+		top:-1vh;
+		animation:color infinite ease-in-out 10s;}
+
+	.date1{left:0;}
+	.web{left:44vw;}
+	.date2{right:0;}
+
+.mid {
+	width:100%;
+	height:35%;
+	background-color:white;
+	position:absolute;
+	overflow:hidden;
+	top:5%}
+
+	.name {
+		margin:0;
+		border:0;
+		padding:0;
+		width:25vw;
+		height:30vh;
+		position:absolute;
+		left:0;
+		/*animation: fill 10s infinite ease-in-out;*/
+		}
+
+	.subname {
+		margin:0;
+		border:0;
+		padding:0;
+		width:25vw;
+		height:30vh;
+		position:absolute;
+		right:0;
+		top:3;
+		/*animation: fill 10s infinite ease-in-out;*/}
+
+	.deco1 {
+		margin:0;
+		border:0;
+		padding:0;
+		position:absolute;
+		border-radius:50%;
+		background-color:black;
+		top:0;
+		left:0;}
+
+	.semi1{
+		margin:0;
+		border:0;
+		padding:0;
+		width:14vw;
+		height:14vw;
+		position:absolute;
+		border-radius:50%;
+		background-color:black;
+		top:4vh;
+		left:-5vw;
+
+		animation: bgcolor 10s infinite ease-in-out;}
+
+	.semi2{
+		margin:0;
+		border:0;
+		padding:0;
+		width:14vw;
+		height:14vw;
+		position:absolute;
+		border-radius:50%;
+		background-color:black;
+		top:4vh;
+		right:-5vw;
+		animation: bgcolor 10s infinite ease-in-out;}
+
+	@keyframes bgcolor {
+	0% {background-color:#1E5EC0;}
+	25% {background-color:#22B473;}
+	50% {background-color:#EC2024;}
+	100% {background-color:#1E5EC0;}
+	}
+	
+.bottom {
+	width:100%;
+	height:65%;
+	background-color:white;
+	position:absolute;
+	overflow:hidden;
+	top:35%;}
+
+	.box {
+		margin:0;
+		border:0;
+		padding:0;
+		position:absolute;
+		fill:black;
+		width:97vw;
+		height:60vh;
+		top:0;
+		left:-6;
+
+		animation: reflect ease-in-out 2s infinite, zoom ease-in-out 5s infinite;}
+
+		@keyframes reflect {
+		0% {transform:skew(-1deg, 2deg);}
+		50% {transform:skew(5deg, -9deg);}
+		100% {transform:skew(-1deg, 2deg);}
+		}
+
+		@keyframes zoom {
+		0% {transform:scale(1.1);}
+		50% {transform:scale(1.14);}
+		100% {transform:scale(1.1);}
+	}
+
+	.ob1 {
+		margin:0;
+		border:0;
+		padding:0;
+		fill:#1B61B9;
+		position:absolute;
+		width:10vw;
+		height:10vh;
+		top:40%;
+		animation:move1 infinite ease-in-out 15s, fill infinite 10s ease-in-out, rotate1 infinite ease-in-out 6s;}
+
+		@keyframes move1 {
+		0% {top:40%;}
+		50% {top:20%;}
+		100% {top:40%;}
+		}
+
+		@keyframes rotate1 {
+		0%{transform:rotateY(0deg);}
+		50%{transform:rotateY(90deg);}
+		100%{transform:rotateY(0deg);}
+		}
+
+	.ob2 {
+		margin:0;
+		border:0;
+		padding:0;
+		fill:white;
+		position:absolute;
+		width:7vw;
+		height:7vh;
+		top:15%;
+		left:20%;
+		animation:move2 infinite ease-in-out 15s, rotate2 infinite ease-in-out 5s;}
+
+		@keyframes move2 {
+		0% {top:15%;}
+		50% {top:30%;}
+		100% {top:15%;}
+		}
+
+		@keyframes rotate2 {
+		0%{transform:rotateY(0deg);}
+		50%{transform:rotateY(180deg);}
+		100%{transform:rotateY(0deg);}
+		}
+
+	.ob3 {
+		margin:0;
+		border:0;
+		padding:0;
+		fill:#1E5EC0;
+		position:absolute;
+		width:10vw;
+		height:10vh;
+		top:60%;
+		left:87%;
+		animation:move3 infinite ease-in-out 15s, fill infinite 10s ease-in-out, rotate3 infinite ease-in-out 9s;}
+
+		@keyframes move3 {
+		0% {top:60%;}
+		50% {top:40%;}
+		100% {top:60%;}
+		}
+
+		@keyframes rotate3 {
+		0%{transform:rotateY(0deg);}
+		50%{transform:rotateY(-180deg);}
+		100%{transform:rotateY(0deg);}
+		}
+
+	.ob4 {
+		margin:0;
+		border:0;
+		padding:0;
+		fill:white;
+		position:absolute;
+		width:10vw;
+		height:10vh;
+		top:35%;
+		left:80%;
+		animation:move4 infinite ease-in-out 15s, rotate4 infinite ease-in-out 5s;}
+
+		@keyframes move4 {
+		0% {top:35%;}
+		50% {top:45%;}
+		100% {top:35%;}
+		}
+
+		@keyframes rotate4 {
+		0%{transform:rotateY(0deg);}
+		50%{transform:rotateY(-360deg);}
+		100%{transform:rotateY(0deg);}
+		}
+
+	.ob5 {
+		margin:0;
+		border:0;
+		padding:0;
+		fill:#1E5EC0;
+		position:absolute;
+		width:7vw;
+		height:7vh;
+		top:60%;
+		left:70%;
+		animation:move5 infinite ease-in-out 15s, fill infinite 10s ease-in-out;}
+
+		@keyframes move5 {
+		0% {top:60%;}
+		50% {top:65%;}
+		100% {top:60%;}
+		}
+
+	.b1 {fill:white;}
+	.b2 {fill:#1E5EC0; animation: fill infinite 10s ease-in-out;}
+
+	.ob6 {
+		margin:0;
+		border:0;
+		padding:0;
+		position:absolute;
+		width:10vw;
+		height:10vh;
+		top:30%;
+		left:70%;
+		animation:move6 infinite ease-in-out 15s, rotate6 infinite ease-in-out 8s;}
+
+		@keyframes move6 {
+		0% {top:30%;}
+		50% {top:50%;}
+		100% {top:30%;}
+		}
+
+		@keyframes rotate6 {
+		0%{transform:rotateY(0deg);}
+		50%{transform:rotateY(-90deg);}
+		100%{transform:rotateY(0deg);}
+		}
+
+	.ob7 {
+		margin:0;
+		border:0;
+		padding:0;
+		fill:white;
+		position:absolute;
+		width:7vw;
+		height:7vh;
+		top:50%;
+		left:28%;
+		animation:move7 infinite ease-in-out 15s;}
+
+		@keyframes move7 {
+		0% {top:50%;}
+		50% {top:60%;}
+		100% {top:50%;}
+		}
+
+	.ob8 {
+		margin:0;
+		border:0;
+		padding:0;
+		fill:white;
+		position:absolute;
+		width:10vw;
+		height:10vh;
+		top:15%;
+		left:8%;
+		animation:move8 infinite ease-in-out 15s;}
+
+		@keyframes move8 {
+		0% {top:10%;}
+		50% {top:60%;}
+		100% {top:10%;}
+		}
+
+	.ob9 {
+		margin:0;
+		border:0;
+		padding:0;
+		fill:#1E5EC0;
+		position:absolute;
+		width:7vw;
+		height:7vh;
+		top:45%;
+		left:15%;
+
+		animation:move9 infinite ease-in-out 15s, fill infinite 10s ease-in-out;}
+
+		@keyframes move9 {
+		0% {top:45%;}
+		50% {top:35%;}
+		100% {top:45%;}
+		}
+
+	.ob10 {
+		margin:0;
+		border:0;
+		padding:0;
+		fill:#1E5EC0;
+		position:absolute;
+		width:10vw;
+		height:10vh;
+		top:20%;
+		left:30%;
+
+		animation:move10 infinite ease-in-out 15s, fill infinite 8s ease-in-out;}
+
+		@keyframes move10 {
+		0% {top:20%;}
+		50% {top:30%;}
+		100% {top:20%;}
+		}
+
+
+	.ob11 {
+		margin:0;
+		border:0;
+		padding:0;
+		fill:white;
+		position:absolute;
+		width:7vw;
+		height:7vh;
+		top:40%;
+		left:90%;
+
+		animation:move11 infinite ease-in-out 20s;}
+
+		@keyframes move11 {
+		0% {top:20%;}
+		50% {top:25%;}
+		100% {top:20%;}
+		}
+
+
+	.info1 {
+		margin:0;
+		border:0;
+		padding:0;
+		fill:black;
+		position:absolute;
+		width:30vw;
+		height:15vh;
+		top:43vh;
+		left:1.5vw;
+		animation: wave infinite ease-in-out 5s}
+
+		@keyframes wave {
+		0% {transform:translate3d(0,-10px, 0);}
+		50% {transform:translate3d(0,2px, 0);}
+		100% {transform:translate3d(0,-10px, 0);}
+		}
+
+	.info2 {
+		margin:0;
+		border:0;
+		padding:0;
+		fill:black;
+		position:absolute;
+		width:22vw;
+		height:15vh;
+		top:4vh;
+		left:75vw;
+		animation: wave infinite ease-in-out 5s;}
+
+.figure {
+	margin:0;
+	border:0;
+	padding:0;
+	position:absolute;
+	width:55vw;
+	height:80vh;
+	top:15%;
+	left:24%;
+	fill:#1B61B9;
+	animation: fill infinite 10s ease-in-out;}
+
+	.henry {
+		margin:0;
+		border:0;
+		padding:0;
+		position:absolute;
+		width:10vw;
+		height:15vh;
+		top:5%;
+		left:35%;
+		fill:#1B61B9;
+		animation: fill infinite 10s ease-in-out, roro infinite 5s ease-in-out;}
+
+		@keyframes roro {
+		0% {transform:skew(-3deg, 3deg);}
+		50% {transform:skew(2deg, -2deg);}
+		100% {transform:skew(-3deg, 3deg);}
+		}
+
+	.matisse{
+		margin:0;
+		border:0;
+		padding:0;
+		position:absolute;
+		width:10vw;
+		height:15vh;
+		top:25%;
+		left:63%;
+		fill:#1B61B9;
+		animation: fill infinite 10s ease-in-out, roro1 infinite 5s ease-in-out;
+	}
+
+		@keyframes roro1 {
+		0% {transform:skew(-1deg, -3deg);}
+		50% {transform:skew(-2deg, 5deg);}
+		100% {transform:skew(-1deg, -3deg);}
+		}
+
+	@keyframes skew1 {
+		0% {transform:skew(2deg, 2deg);}
+		50% {transform:skew(2.5deg, -1.5deg);}
+		100% {transform:skew(2deg, 2deg);}
+		}
+
+	@keyframes skew2 {
+		0% {transform:skew(0deg, 0deg);}
+		50% {transform:skew(-1deg, -1deg);}
+		100% {transform:skew(0deg, 0deg);}
+		}
+
+	@keyframes skew3 {
+		0% {transform:skew(-1deg, -1deg);}
+		50% {transform:skew(-1.5deg, 1.5deg);}
+		100% {transform:skew(-1deg, -1deg);}
+		}
+
+	@keyframes skew4 {
+		0% {transform:skew(3deg, 3deg);}
+		50% {transform:skew(2deg, 2deg);}
+		100% {transform:skew(3deg, 3deg);}
+		}
+
+	@keyframes skew5 {
+		0% {transform:skew(.5deg, .5deg);}
+		50% {transform:skew(-1.5deg, 1.5deg);}
+		100% {transform:skew(.5deg, .5deg);}
+		}
+
+	@keyframes skew6 {
+		0% {transform:skew(-3deg, -3deg);}
+		50% {transform:skew(-2deg, 2deg);}
+		100% {transform:skew(-3deg, -3deg);}
+		}
+
+	.fig1{
+		animation: skew1 infinite 5s ease-in-out;}
+	.fig2{
+		animation: skew2 infinite 5s ease-in-out;}
+	.fig3{
+		animation: skew3 infinite 5s ease-in-out;}
+	.fig4{
+		animation: skew4 infinite 5s ease-in-out;}
+	.fig5{
+		animation: skew5 infinite 5s ease-in-out;}
+	.fig7{
+		animation: skew6 infinite 5s ease-in-out;}
+
+@keyframes fill {
+0% {fill:#1E5EC0;}
+25% {fill:#22B473;}
+50% {fill:#EC2024;}
+100% {fill:#1E5EC0;}
+}
+
+@keyframes color {
+0% {color:#1E5EC0;}
+25% {color:#22B473;}
+50% {color:#EC2024;}
+100% {color:#1E5EC0;}
+}
+
+
+
